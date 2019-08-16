@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content="@themepixels">
+    <meta name="twitter:creator" content="@themepixels">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DashForge">
+    <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard admin">
+    <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="http://themepixels.me/dashforge">
+    <meta property="og:title" content="DashForge">
+    <meta property="og:description" content="Responsive Bootstrap 4 Dashboard admin">
+
+    <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard admin">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('admin/assets/img/favicon.png')}}">
+
+    <title>DashForge Responsive Bootstrap 4 Dashboard admin</title>
+
+    <!-- vendor css -->
+    <link href="{{asset('admin/lib/@fortawesome/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+    <link href="{{asset('admin/lib/ionicons/css/ionicons.min.css" rel="stylesheet')}}">
+    <link href="{{asset('admin/lib/jqvmap/jqvmap.min.css" rel="stylesheet')}}">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="{{asset('admin/assets/css/dashforge.css')}}">
+    <link rel="stylesheet" href="{{asset('admin/assets/css/dashforge.dashboard.css')}}">
+  </head>
+  <body>
+
+    <aside class="aside aside-fixed">
+      <div class="aside-header">
+        <a href="../../index.html" class="aside-logo">dash<span>forge</span></a>
+        <a href="" class="aside-menu-link">
+          <i data-feather="menu"></i>
+          <i data-feather="x"></i>
+        </a>
+      </div>
+      <div class="aside-body">
+        <div class="aside-loggedin">
+          <div class="d-flex align-items-center justify-content-start">
+            <a href="" class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></a>
+            <div class="aside-alert-link">
+              <a href="" class="new" data-toggle="tooltip" title="You have 2 unread messages"><i data-feather="message-square"></i></a>
+              <a href="" class="new" data-toggle="tooltip" title="You have 4 new notifications"><i data-feather="bell"></i></a>
+              <a href="" data-toggle="tooltip" title="Sign out"><i data-feather="log-out"></i></a>
+            </div>
+          </div>
+          <div class="aside-loggedin-user">
+            <a href="#loggedinMenu" class="d-flex align-items-center justify-content-between mg-b-2" data-toggle="collapse">
+              <h6 class="tx-semibold mg-b-0">Katherine Pechon</h6>
+              <i data-feather="chevron-down"></i>
+            </a>
+            <p class="tx-color-03 tx-12 mg-b-0">Administrator</p>
+          </div>
+          <div class="collapse" id="loggedinMenu">
+            <ul class="nav nav-aside mg-b-0">
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="edit"></i> <span>Edit Profile</span></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="user"></i> <span>View Profile</span></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="settings"></i> <span>Account Settings</span></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="help-circle"></i> <span>Help Center</span></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="log-out"></i> <span>Sign Out</span></a></li>
+            </ul>
+          </div>
+        </div><!-- aside-loggedin -->
+        <ul class="nav nav-aside">
+          <li class="nav-label">Dashboard</li>
+          <li class="nav-item active"><a href="dashboard-one.html" class="nav-link"><i data-feather="shopping-bag"></i> <span>Leads Prospects</span></a></li>
+          <li class="nav-item"><a href="dashboard-two.html" class="nav-link"><i data-feather="globe"></i> <span>Memberships</span></a></li>
+          <li class="nav-item"><a href="dashboard-three.html" class="nav-link"><i data-feather="pie-chart"></i> <span>Benefits</span></a></li>
+          <li class="nav-item"><a href="dashboard-four.html" class="nav-link"><i data-feather="life-buoy"></i> <span>Benefits Categories</span></a></li>
+          <li class="nav-label mg-t-25">Web Apps</li>
+          <li class="nav-item"><a href="app-calendar.html" class="nav-link"><i data-feather="calendar"></i> <span>Calendar</span></a></li>
+          <li class="nav-item"><a href="app-chat.html" class="nav-link"><i data-feather="message-square"></i> <span>Chat</span></a></li>
+          <li class="nav-item"><a href="app-contacts.html" class="nav-link"><i data-feather="users"></i> <span>Contacts</span></a></li>
+          <li class="nav-item"><a href="app-file-manager.html" class="nav-link"><i data-feather="file-text"></i> <span>File Manager</span></a></li>
+          <li class="nav-item"><a href="app-mail.html" class="nav-link"><i data-feather="mail"></i> <span>Mail</span></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+      <div class="content-header">
+        <div class="content-search">
+          <i data-feather="search"></i>
+          <input type="search" class="form-control" placeholder="Search...">
+        </div>
+        <nav class="nav">
+          <a href="" class="nav-link"><i data-feather="help-circle"></i></a>
+          <a href="" class="nav-link"><i data-feather="grid"></i></a>
+          <a href="" class="nav-link"><i data-feather="align-left"></i></a>
+        </nav>
+      </div><!-- content-header -->
+
+      <div class="content-body">
+        <div class="container pd-x-0">
+          <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
+            <div>
+              <h4 class="mg-b-0 tx-spacing--1">LEADS PROSPECT</h4>
+            </div>
+            <div class="d-none d-md-block">
+              <button class="btn btn-sm pd-x-15 btn-white btn-uppercase"><i data-feather="download" class="wd-10 mg-r-5"></i>Download</button>
+              <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><i data-feather="add" class="wd-10 mg-r-5"></i> +Add Prospect</button>
+            </div>
+          </div>
+
+
+
+          <div data-label="Example" class="df-example demo-table">
+            <div id="example1_wrapper" class="dataTables_wrapper no-footer">
+                    <nav class="navbar navbar-expand-lg bg-gray-100 bd">
+                            <div class="collapse navbar-collapse order-2" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                  Lead List <span class="sr-only">(current)</span>
+                                </li>
+                              </ul>
+                              <form class="form-inline mg-t-10 mg-lg-0">
+                                <input class="form-control wd-150-f mg-r-5" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-primary" type="submit">Search</button>
+                              </form>
+                            </div>
+                          </nav>
+            <table id="example1" class="table dataTable no-footer" role="grid" aria-describedby="example1_info">
+              <thead>
+                  <tr role="row" style="text-align:center">
+                      <th class="wd-15p sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 124px;">
+                        ID
+                    </th>
+                    <th class="wd-25p sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 80px;">Name</th>
+                    <th class="wd-20p sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 119px;">Phone</th>
+                    <th class="wd-20p sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 78px;">Status</th>
+                    <th class="wd-20p " tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 118px;">Action</th>
+                </tr>
+              </thead>
+
+              <tbody>
+              <tr role="row" class="odd">
+                      <td class="sorting_1">Airi Satou</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      <td>33</td>
+                      <td>$162,700</td>
+                  </tr><tr role="row" class="even">
+                      <td class="sorting_1">Angelica Ramos</td>
+                      <td>Chief Executive Officer (CEO)</td>
+                      <td>London</td>
+                      <td>47</td>
+                      <td>$1,200,000</td>
+                  </tr><tr role="row" class="odd">
+                      <td class="sorting_1">Ashton Cox</td>
+                      <td>Junior Technical Author</td>
+                      <td>San Francisco</td>
+                      <td>66</td>
+                      <td>$86,000</td>
+                  </tr><tr role="row" class="even">
+                      <td class="sorting_1">Bradley Greer</td>
+                      <td>Software Engineer</td>
+                      <td>London</td>
+                      <td>41</td>
+                      <td>$132,000</td>
+                  </tr><tr role="row" class="odd">
+                      <td class="sorting_1">Brenden Wagner</td>
+                      <td>Software Engineer</td>
+                      <td>San Francisco</td>
+                      <td>28</td>
+                      <td>$206,850</td>
+                  </tr><tr role="row" class="even">
+                      <td class="sorting_1">Brielle Williamson</td>
+                      <td>Integration Specialist</td>
+                      <td>New York</td>
+                      <td>61</td>
+                      <td>$372,000</td>
+                  </tr><tr role="row" class="odd">
+                      <td class="sorting_1">Bruno Nash</td>
+                      <td>Software Engineer</td>
+                      <td>London</td>
+                      <td>38</td>
+                      <td>$163,500</td>
+                  </tr><tr role="row" class="even">
+                      <td class="sorting_1">Caesar Vance</td>
+                      <td>Pre-Sales Support</td>
+                      <td>New York</td>
+                      <td>21</td>
+                      <td>$106,450</td>
+                  </tr><tr role="row" class="odd">
+                      <td class="sorting_1">Cara Stevens</td>
+                      <td>Sales Assistant</td>
+                      <td>New York</td>
+                      <td>46</td>
+                      <td>$145,600</td>
+                  </tr><tr role="row" class="even">
+                      <td class="sorting_1">Cedric Kelly</td>
+                      <td>Senior Javascript Developer</td>
+                      <td>Edinburgh</td>
+                      <td>22</td>
+                      <td>$433,060</td>
+                  </tr></tbody>
+          </table><div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div><div class="dataTables_paginate paging_simple_numbers" id="example1_paginate"><a class="paginate_button previous disabled" aria-controls="example1" data-dt-idx="0" tabindex="0" id="example1_previous">Previous</a><span><a class="paginate_button current" aria-controls="example1" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example1" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="example1" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="example1" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="example1" data-dt-idx="5" tabindex="0">5</a><a class="paginate_button " aria-controls="example1" data-dt-idx="6" tabindex="0">6</a></span><a class="paginate_button next" aria-controls="example1" data-dt-idx="7" tabindex="0" id="example1_next">Next</a></div></div>
+          </div>
+
+        </div><!-- container -->
+      </div>
+    </div>
+
+    <script src="{{asset('admin/lib/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('admin/lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('admin/lib/feather-icons/feather.min.js')}}"></script>
+    <script src="{{asset('admin/lib/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
+    <script src="{{asset('admin/lib/jquery.flot/jquery.flot.js')}}"></script>
+    <script src="{{asset('admin/lib/jquery.flot/jquery.flot.stack.js')}}"></script>
+    <script src="{{asset('admin/lib/jquery.flot/jquery.flot.resize.js')}}"></script>
+    <script src="{{asset('admin/lib/chart.js/Chart.bundle.min.js')}}"></script>
+    <script src="{{asset('admin/lib/jqvmap/jquery.vmap.min.js')}}"></script>
+    <script src="{{asset('admin/lib/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
+
+    <script src="{{asset('admin/assets/js/dashforge.js')}}"></script>
+    <script src="{{asset('admin/assets/js/dashforge.aside.js')}}"></script>
+    <script src="{{asset('admin/assets/js/dashforge.sampledata.js')}}"></script>
+
+    <!-- append theme customizer -->
+    <script src="{{asset('admin/lib/js-cookie/js.cookie.js')}}"></script>
+    <script src="{{asset('admin/assets/js/dashforge.settings.js')}}"></script>
+
+    <script>
+      $(function(){
+        'use strict'
+
+        var plot = $.plot('#flotChart', [{
+          data: df3,
+          color: '#69b2f8'
+        },{
+          data: df1,
+          color: '#d1e6fa'
+        },{
+          data: df2,
+          color: '#d1e6fa',
+          lines: {
+            fill: false,
+            lineWidth: 1.5
+          }
+        }], {
+    			series: {
+            stack: 0,
+    				shadowSize: 0,
+            lines: {
+              show: true,
+              lineWidth: 0,
+              fill: 1
+            }
+    			},
+          grid: {
+            borderWidth: 0,
+            aboveData: true
+          },
+    			yaxis: {
+            show: false,
+    				min: 0,
+    				max: 350
+    			},
+    			xaxis: {
+            show: true,
+            ticks: [[0,''],[8,'Jan'],[20,'Feb'],[32,'Mar'],[44,'Apr'],[56,'May'],[68,'Jun'],[80,'Jul'],[92,'Aug'],[104,'Sep'],[116,'Oct'],[128,'Nov'],[140,'Dec']],
+            color: 'rgba(255,255,255,.2)'
+          }
+        });
+
+
+        $.plot('#flotChart2', [{
+          data: [[0,55],[1,38],[2,20],[3,70],[4,50],[5,15],[6,30],[7,50],[8,40],[9,55],[10,60],[11,40],[12,32],[13,17],[14,28],[15,36],[16,53],[17,66],[18,58],[19,46]],
+          color: '#69b2f8'
+        },{
+          data: [[0,80],[1,80],[2,80],[3,80],[4,80],[5,80],[6,80],[7,80],[8,80],[9,80],[10,80],[11,80],[12,80],[13,80],[14,80],[15,80],[16,80],[17,80],[18,80],[19,80]],
+          color: '#f0f1f5'
+        }], {
+          series: {
+            stack: 0,
+            bars: {
+              show: true,
+              lineWidth: 0,
+              barWidth: .5,
+              fill: 1
+            }
+          },
+          grid: {
+            borderWidth: 0,
+            borderColor: '#edeff6'
+          },
+          yaxis: {
+            show: false,
+            max: 80
+          },
+          xaxis: {
+            ticks:[[0,'Jan'],[4,'Feb'],[8,'Mar'],[12,'Apr'],[16,'May'],[19,'Jun']],
+            color: '#fff',
+          }
+        });
+
+        $.plot('#flotChart3', [{
+            data: df4,
+            color: '#9db2c6'
+          }], {
+    			series: {
+    				shadowSize: 0,
+            lines: {
+              show: true,
+              lineWidth: 2,
+              fill: true,
+              fillColor: { colors: [ { opacity: 0 }, { opacity: .5 } ] }
+            }
+    			},
+          grid: {
+            borderWidth: 0,
+            labelMargin: 0
+          },
+    			yaxis: {
+            show: false,
+            min: 0,
+            max: 60
+          },
+    			xaxis: { show: false }
+    		});
+
+        $.plot('#flotChart4', [{
+            data: df5,
+            color: '#9db2c6'
+          }], {
+    			series: {
+    				shadowSize: 0,
+            lines: {
+              show: true,
+              lineWidth: 2,
+              fill: true,
+              fillColor: { colors: [ { opacity: 0 }, { opacity: .5 } ] }
+            }
+    			},
+          grid: {
+            borderWidth: 0,
+            labelMargin: 0
+          },
+    			yaxis: {
+            show: false,
+            min: 0,
+            max: 80
+          },
+    			xaxis: { show: false }
+    		});
+
+        $.plot('#flotChart5', [{
+            data: df6,
+            color: '#9db2c6'
+          }], {
+    			series: {
+    				shadowSize: 0,
+            lines: {
+              show: true,
+              lineWidth: 2,
+              fill: true,
+              fillColor: { colors: [ { opacity: 0 }, { opacity: .5 } ] }
+            }
+    			},
+          grid: {
+            borderWidth: 0,
+            labelMargin: 0
+          },
+    			yaxis: {
+            show: false,
+            min: 0,
+            max: 80
+          },
+    			xaxis: { show: false }
+    		});
+
+        $.plot('#flotChart6', [{
+            data: df4,
+            color: '#9db2c6'
+          }], {
+    			series: {
+    				shadowSize: 0,
+            lines: {
+              show: true,
+              lineWidth: 2,
+              fill: true,
+              fillColor: { colors: [ { opacity: 0 }, { opacity: .5 } ] }
+            }
+    			},
+          grid: {
+            borderWidth: 0,
+            labelMargin: 0
+          },
+    			yaxis: {
+            show: false,
+            min: 0,
+            max: 60
+          },
+    			xaxis: { show: false }
+    		});
+
+        $('#vmap').vectorMap({
+          map: 'usa_en',
+          showTooltip: true,
+          backgroundColor: '#fff',
+          color: '#d1e6fa',
+          colors: {
+            fl: '#69b2f8',
+            ca: '#69b2f8',
+            tx: '#69b2f8',
+            wy: '#69b2f8',
+            ny: '#69b2f8'
+          },
+          selectedColor: '#00cccc',
+          enableZoom: false,
+          borderWidth: 1,
+          borderColor: '#fff',
+          hoverOpacity: .85
+        });
+
+
+        var ctxLabel = ['6am', '10am', '1pm', '4pm', '7pm', '10pm'];
+        var ctxData1 = [20, 60, 50, 45, 50, 60];
+        var ctxData2 = [10, 40, 30, 40, 55, 25];
+
+        // Bar chart
+        var ctx1 = document.getElementById('chartBar1').getContext('2d');
+        new Chart(ctx1, {
+          type: 'horizontalBar',
+          data: {
+            labels: ctxLabel,
+            datasets: [{
+              data: ctxData1,
+              backgroundColor: '#69b2f8'
+            }, {
+              data: ctxData2,
+              backgroundColor: '#d1e6fa'
+            }]
+          },
+          options: {
+            maintainAspectRatio: false,
+            responsive: true,
+            legend: {
+              display: false,
+              labels: {
+                display: false
+              }
+            },
+            scales: {
+              yAxes: [{
+                gridLines: {
+                  display: false
+                },
+                ticks: {
+                  display: false,
+                  beginAtZero: true,
+                  fontSize: 10,
+                  fontColor: '#182b49'
+                }
+              }],
+              xAxes: [{
+                gridLines: {
+                  display: true,
+                  color: '#eceef4'
+                },
+                barPercentage: 0.6,
+                ticks: {
+                  beginAtZero: true,
+                  fontSize: 10,
+                  fontColor: '#8392a5',
+                  max: 80
+                }
+              }]
+            }
+          }
+        });
+
+      })
+    </script>
+  </body>
+</html>
